@@ -30,10 +30,10 @@ export default function Footer() {
         <div>
           <div className="fcol-title">Guarantees</div>
           <ul className="flinks">
-            <li><Link href="/contact">48-Hour Placement</Link></li>
-            <li><Link href="/contact">Watch Before Hiring</Link></li>
-            <li><Link href="/contact">Free Replacement</Link></li>
-            <li><Link href="/contact">No Long-Term Contracts</Link></li>
+            <li><span>48-Hour Placement</span></li>
+            <li><span>Watch Before Hiring</span></li>
+            <li><span>Free Replacement</span></li>
+            <li><span>No Long-Term Contracts</span></li>
           </ul>
         </div>
       </div>

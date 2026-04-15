@@ -475,8 +475,9 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 64
 .femail a { font-size: .84rem; color: var(--red); text-decoration: none; }
 .fcol-title { font-size: .68rem; font-weight: 600; color: var(--w40); text-transform: uppercase; letter-spacing: .14em; margin-bottom: 16px; }
 .flinks { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.flinks a { font-size: .84rem; color: var(--w40); text-decoration: none; font-weight: 300; transition: color .2s; }
+.flinks a, .flinks span { font-size: .84rem; color: var(--w40); text-decoration: none; font-weight: 300; transition: color .2s; cursor: default; }
 .flinks a:hover { color: var(--white); }
+.flinks span:hover { color: var(--white); }
 .fb { display: flex; align-items: center; justify-content: space-between; }
 .fcopy { font-size: .76rem; color: var(--w40); font-weight: 300; }
 
