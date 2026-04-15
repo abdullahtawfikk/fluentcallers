@@ -15,13 +15,12 @@ export default function Footer() {
           <ul className="flinks">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/why">Why Us</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         </div>
         <div>
           <div className="fcol-title">Company</div>
           <ul className="flinks">
-            <li><a href="mailto:jackson@fluentcallers.com">Contact Us</a></li>
             <li><Link href="/apply">Apply as a VA</Link></li>
             <li><Link href="/privacy">Privacy Policy</Link></li>
             <li><Link href="/terms">Terms of Service</Link></li>
