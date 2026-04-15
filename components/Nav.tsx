@@ -24,6 +24,7 @@ export default function Nav() {
           <span className="nav-logo-line">Callers</span>
         </Link>
         <ul className="nav-center">
+          <li><Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link></li>
           <li><Link href="/why" className={pathname === '/why' ? 'active' : ''}>Why Us</Link></li>
           <li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
           <li><Link href="/apply" className={pathname === '/apply' ? 'active' : ''}>Apply as VA</Link></li>
