@@ -89,7 +89,7 @@ body::after {
 /* ─── NAV ────────────────────────────────────────────────────────────────── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: grid; grid-template-columns: auto 1fr auto;
+  display: grid; grid-template-columns: 1fr auto 1fr;
   align-items: center; gap: 32px;
   padding: 24px 64px;
   border-bottom: 1px solid transparent;
@@ -108,15 +108,12 @@ nav.scrolled {
 .nav-logo-line { font-size: 1.05rem; font-weight: 800; color: var(--white); letter-spacing: -0.01em; display: block; }
 .nav-logo-line .dot { color: var(--red); }
 
-.nav-center {
-  display: flex; gap: 44px; list-style: none;
-  position: absolute; left: 50%; transform: translateX(-50%);
-}
+.nav-center { display: flex; gap: 44px; list-style: none; justify-content: center; }
 .nav-center a { font-size: .85rem; color: var(--w70); text-decoration: none; transition: color .2s; }
 .nav-center a:hover { color: var(--white); }
 .nav-center a.active { color: var(--white); }
 
-.nav-right { display: flex; align-items: center; gap: 20px; }
+.nav-right { display: flex; align-items: center; gap: 20px; justify-self: end; }
 .nav-email { font-size: .82rem; color: var(--w40); text-decoration: none; transition: color .2s; }
 .nav-email:hover { color: var(--w70); }
 
