@@ -210,7 +210,6 @@ section { padding: 96px 64px; }
   border-bottom: 1px solid var(--border);
 }
 .marquee-inner { display: flex; width: max-content; animation: scroll-left 36s linear infinite; }
-.marquee-inner:hover { animation-play-state: paused; }
 @keyframes scroll-left {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
