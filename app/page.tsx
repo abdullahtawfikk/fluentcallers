@@ -32,7 +32,6 @@ export default function Home() {
           <div className="hero-actions">
             <Link href="/contact" className="btn-red">Find My VA</Link>
             <Link href="#how" className="btn-ghost">How it works</Link>
-            <a href="https://calendly.com/jackson-fluentcallers/15min" target="_blank" rel="noopener noreferrer" className="calendly-link">Or book a 15-min call →</a>
           </div>
           <div className="hero-pills">
             <span className="pill"><span className="chk">—</span> No long-term contracts</span>
