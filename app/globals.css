@@ -258,8 +258,8 @@ section { padding: 96px 64px; }
 
 /* STATS PANEL */
 .stats-panel {
-  margin-top: 56px; display: grid; grid-template-columns: repeat(4,1fr);
-  border: 1px solid var(--border); background: var(--bg3);
+  display: grid; grid-template-columns: repeat(4,1fr);
+  border-top: 1px solid var(--border); background: var(--bg3);
 }
 .stat-item { padding: 40px 36px; border-right: 1px solid var(--border); }
 .stat-item:last-child { border-right: none; }

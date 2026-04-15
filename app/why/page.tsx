@@ -25,7 +25,7 @@ export default function WhyPage() {
           <p className="hero-sub">We don&apos;t do general VA placement. Every person in our network is a trained, tested cold caller — nothing else. Here&apos;s what that means for you.</p>
           <div className="hero-actions">
             <Link href="/contact" className="btn-red">Find My VA</Link>
-            <Link href="/pricing" className="btn-ghost">See Pricing</Link>
+            <Link href="/contact" className="btn-ghost">Get Started</Link>
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function WhyPage() {
       </section>
 
       {/* STATS PANEL */}
-      <section className="sec-sep" style={{ padding: '0', background: 'var(--bg3)' }}>
+      <section style={{ padding: '0', background: 'var(--bg3)' }}>
         <div className="stats-panel">
           <div className="stat-item">
             <div className="stat-n">48<em>h</em></div>
