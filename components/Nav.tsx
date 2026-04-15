@@ -1,15 +1,26 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
+  const [hidden, setHidden] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const lastY = useRef(0)
   const pathname = usePathname()
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 30)
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled(y > 30)
+      if (y > 80) {
+        setHidden(y > lastY.current)
+      } else {
+        setHidden(false)
+      }
+      lastY.current = y
+    }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -18,7 +29,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className={scrolled ? 'scrolled' : ''}>
+      <nav className={[scrolled ? 'scrolled' : '', hidden ? 'nav-hidden' : ''].filter(Boolean).join(' ')}>
         <Link href="/" className="nav-logo">
           <span className="nav-logo-line">Fluent <span className="dot">●</span></span>
           <span className="nav-logo-line">Callers</span>
