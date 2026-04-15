@@ -3,12 +3,14 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Why Fluent Callers',
-  description: 'Cold calling specialists, not general VAs. Native-level English, 48-hour placement, free replacement guarantee — built for US businesses that need outbound done right.',
+  description: 'See what makes Fluent Callers different — native-level English, cold calling specialists only, 48-hour placement, and zero-risk replacement.',
   openGraph: {
-    title: 'Why Fluent Callers',
-    description: 'Cold calling specialists, not general VAs. Native-level English, 48-hour placement, free replacement guarantee.',
+    title: 'Why Fluent Callers | What Sets Us Apart',
+    description: 'See what makes Fluent Callers different — native-level English, cold calling specialists only, 48-hour placement, and zero-risk replacement.',
     url: 'https://fluentcallers.com/why',
+    type: 'website',
   },
+  twitter: { card: 'summary_large_image' },
   alternates: { canonical: 'https://fluentcallers.com/why' },
 }
 

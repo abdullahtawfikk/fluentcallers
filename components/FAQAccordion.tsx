@@ -1,43 +1,41 @@
 'use client'
 import { useState } from 'react'
 
-const FAQS = [
+type FAQItem = { q: string; a: string }
+
+const DEFAULT_FAQS: FAQItem[] = [
   {
-    q: 'What industries do your VAs work in?',
-    a: 'Our callers have worked across home services, solar, real estate, financial advisory, insurance, SaaS, and B2B. We match based on your vertical so the VA already knows the common objections.',
+    q: 'Where are your VAs based?',
+    a: 'English-speaking countries with strong US sales culture training. Every VA passes a strict fluency screen before joining our network — your prospects will never second-guess who they\'re talking to.',
   },
   {
-    q: 'What timezone do the VAs work in?',
-    a: 'We match you with a VA who covers your preferred hours — EST, CST, PST, or split shift. Availability is confirmed before matching so there are no surprises.',
+    q: 'What industries do you serve?',
+    a: 'Home Services, Solar & Energy, Real Estate, Financial Services, Insurance, SaaS/Tech, Roofing, HVAC, Mortgage, and B2B Sales. We match based on your vertical so the VA already knows the common objections.',
   },
   {
-    q: 'Do I need to provide a script?',
-    a: 'A script helps, but it\'s not required. We offer a script and pitch review as part of our onboarding. Our VAs are trained in US sales frameworks and adapt quickly.',
+    q: 'Is there a minimum contract?',
+    a: 'No. We don\'t do long-term contracts. You\'re not locked in. Your arrangement with your VA is flexible — month-to-month is the default.',
   },
   {
-    q: 'What tools do the VAs use?',
-    a: 'Most VAs are comfortable with HubSpot, GoHighLevel, Close, Salesforce, Mojo, PhoneBurner, and CallTools. Tell us what you use in the intake and we\'ll match accordingly.',
+    q: 'What if the VA isn\'t a good fit?',
+    a: 'We replace them free, within 24 hours, no questions asked. Free replacement is included with every placement — just let us know and we handle it.',
   },
   {
-    q: 'How does billing work after placement?',
-    a: 'The placement fee covers our matching and vetting service. After that you pay your VA directly — hourly or monthly, negotiated between you. We don\'t take an ongoing cut.',
+    q: 'How much does it cost?',
+    a: 'Pricing depends on your needs and call volume. Fill out the form and we\'ll give you a clear number on the discovery call. No surprises.',
   },
   {
-    q: 'Is there a long-term contract?',
-    a: 'No. There\'s no minimum commitment from us. Your arrangement with the VA is flexible — month-to-month is the default. We don\'t lock anyone in.',
-  },
-  {
-    q: 'What if the VA doesn\'t work out?',
-    a: 'We replace them at no extra charge — no conversation you have to manage. Free replacement is included with every placement. Just let us know and we\'ll handle it.',
+    q: 'What does "watch before you hire" mean?',
+    a: 'We send a pre-recorded video intro of your matched VA so you can hear their voice and judge their pitch before you commit to anything. You only move forward when you\'re confident.',
   },
 ]
 
-export default function FAQAccordion() {
+export default function FAQAccordion({ items = DEFAULT_FAQS }: { items?: FAQItem[] }) {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
     <div>
-      {FAQS.map((faq, i) => (
+      {items.map((faq, i) => (
         <div key={i} className={`faq-item${open === i ? ' open' : ''}`}>
           <button className="faq-q" onClick={() => setOpen(open === i ? null : i)}>
             {faq.q}

@@ -3,12 +3,14 @@ import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact — Find Your VA',
-  description: 'Submit your requirements and receive matched VA profiles within 24 hours. No commitment required.',
+  description: 'Submit your requirements and get matched VA profiles within 24 hours. No commitment required.',
   openGraph: {
-    title: 'Contact — Find Your VA | Fluent Callers',
-    description: 'Submit your requirements and receive matched VA profiles within 24 hours.',
+    title: 'Find Your VA | Fluent Callers',
+    description: 'Submit your requirements and get matched VA profiles within 24 hours. No commitment required.',
     url: 'https://fluentcallers.com/contact',
+    type: 'website',
   },
+  twitter: { card: 'summary_large_image' },
   alternates: { canonical: 'https://fluentcallers.com/contact' },
 }
 

@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="fb">
-        <div className="fcopy">Fluent Callers &copy; 2025. All rights reserved.</div>
+        <div className="fcopy">Fluent Callers &copy; {new Date().getFullYear()}. All rights reserved.</div>
         <div className="fcopy">Built for businesses that can&apos;t afford to hire wrong.</div>
       </div>
     </footer>

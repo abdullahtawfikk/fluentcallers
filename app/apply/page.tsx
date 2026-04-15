@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ApplyForm from '@/components/ApplyForm'
 
 export const metadata: Metadata = {
   title: 'Apply as a VA',
@@ -63,11 +64,11 @@ export default function ApplyPage() {
         </div>
       </section>
 
-      {/* HOW TO APPLY */}
+      {/* APPLICATION FORM */}
       <section id="how-to-apply" className="sec-sep" style={{ background: 'var(--bg2)' }}>
         <div className="stag">The Application</div>
-        <h2 className="sh2">Two steps. <span className="r">No fluff.</span></h2>
-        <p className="ssub">We keep the process short because your time matters.</p>
+        <h2 className="sh2">Join the Network. <span className="r">Apply in minutes.</span></h2>
+        <p className="ssub">We&apos;re always looking for top-tier English-speaking cold callers. Fill out the form and we&apos;ll review it within 48 hours.</p>
         <div className="apply-layout">
           <div className="apply-steps fu">
             <div className="apply-step">
@@ -78,27 +79,13 @@ export default function ApplyPage() {
             </div>
             <div className="apply-step">
               <span className="apply-step-num">02</span>
-              <h3>Email your Loom link and a short intro</h3>
-              <p>Send your Loom link along with a brief note about yourself — your background, the industries you&apos;ve called in, and what kind of placements you&apos;re looking for. Send it to <a href="mailto:jackson@fluentcallers.com" style={{ color: 'var(--red)', textDecoration: 'none' }}>jackson@fluentcallers.com</a>.</p>
+              <h3>Submit the form</h3>
+              <p>Paste your Loom link in the form alongside your details. We review every submission personally and respond to every qualified applicant within 48 hours.</p>
               <div className="apply-step-bar" />
             </div>
           </div>
           <div className="apply-aside fu">
-            <div className="apply-promise">
-              <div className="promise-icon">
-                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              </div>
-              <div className="promise-h">We respond to everyone qualified.</div>
-              <p className="promise-text">We review every application within 48 hours and respond to every qualified candidate. If you meet the bar, you&apos;ll hear from us. If you don&apos;t, we&apos;ll tell you why.</p>
-              <a
-                href="mailto:jackson@fluentcallers.com?subject=VA%20Application&body=Hey%20Jackson%2C%0A%0AHere%27s%20my%20Loom%20link%3A%20%0A%0AA%20bit%20about%20me%3A%20"
-                className="btn-red"
-                style={{ display: 'block', textAlign: 'center', padding: '15px', fontSize: '.93rem' }}
-              >
-                Send Your Application &rarr;
-              </a>
-              <p className="apply-cta-note">Opens your email app with a pre-filled template. Paste your Loom link and hit send.</p>
-            </div>
+            <ApplyForm />
           </div>
         </div>
       </section>

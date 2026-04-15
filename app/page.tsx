@@ -1,14 +1,17 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
   title: 'Fluent Callers | Hire a Pre-Vetted Cold Calling VA in 48 Hours',
-  description: 'We match US businesses with pre-vetted cold calling and appointment setting VAs. Watch them before you hire. Free replacement guarantee. No long-term contracts.',
+  description: 'Hire a pre-vetted cold calling VA in 48 hours. Watch their pitch before you commit. Free replacement guarantee. Built for US businesses.',
   openGraph: {
     title: 'Fluent Callers | Hire a Pre-Vetted Cold Calling VA in 48 Hours',
-    description: 'Match with a native-English cold calling VA in 48 hours. Watch their pitch before you hire. Free replacement guarantee.',
+    description: 'Hire a pre-vetted cold calling VA in 48 hours. Watch their pitch before you commit. Free replacement guarantee.',
     url: 'https://fluentcallers.com',
+    type: 'website',
   },
+  twitter: { card: 'summary_large_image' },
   alternates: { canonical: 'https://fluentcallers.com' },
 }
 
@@ -29,6 +32,7 @@ export default function Home() {
           <div className="hero-actions">
             <Link href="/contact" className="btn-red">Find My VA</Link>
             <Link href="#how" className="btn-ghost">How it works</Link>
+            <a href="https://calendly.com/jackson-fluentcallers/15min" target="_blank" rel="noopener noreferrer" className="calendly-link">Or book a 15-min call →</a>
           </div>
           <div className="hero-pills">
             <span className="pill"><span className="chk">—</span> No long-term contracts</span>
@@ -126,6 +130,15 @@ export default function Home() {
             </div>
             <div className="t-result">Replacement handled in under 24 hours</div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="sec-sep">
+        <div className="stag">Common Questions</div>
+        <h2 className="sh2">Everything you&apos;re wondering, <span className="r">answered.</span></h2>
+        <div className="faq-home fu">
+          <FAQAccordion />
         </div>
       </section>
 

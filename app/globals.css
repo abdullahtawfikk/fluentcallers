@@ -181,7 +181,9 @@ nav.scrolled {
   color: var(--w70); line-height: 1.75;
   max-width: 580px; margin-bottom: 40px;
 }
-.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 32px; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-bottom: 32px; }
+.calendly-link { font-size: .82rem; color: var(--w40); text-decoration: none; transition: color .2s; white-space: nowrap; }
+.calendly-link:hover { color: var(--white); }
 
 .hero-pills { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 56px; }
 .pill { display: inline-flex; align-items: center; gap: 8px; font-size: .8rem; color: var(--w40); font-weight: 400; }
@@ -348,6 +350,7 @@ section { padding: 96px 64px; }
 
 /* ─── FAQ ────────────────────────────────────────────────────────────────── */
 #faq { background: var(--bg); }
+.faq-home { max-width: 760px; margin-top: 48px; }
 .faq-layout { margin-top: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
 .faq-item { border-bottom: 1px solid var(--border); }
 .faq-q {
@@ -406,7 +409,11 @@ section { padding: 96px 64px; }
 .ftextarea { height: 88px; resize: vertical; }
 .fsubmit { width: 100%; padding: 15px; background: var(--red); color: var(--white); font-family: 'Outfit', sans-serif; font-size: .93rem; font-weight: 600; border: none; cursor: pointer; letter-spacing: .04em; transition: opacity .2s; }
 .fsubmit:hover { opacity: .88; }
+.fsubmit:disabled { opacity: .55; cursor: not-allowed; }
 .fnote { font-size: .75rem; color: var(--w40); text-align: center; margin-top: 12px; line-height: 1.5; }
+.finput.error, .fselect.error, .ftextarea.error { border-color: var(--red); }
+.ferr { font-size: .72rem; color: var(--red); margin: 4px 0 0; line-height: 1.4; }
+.freq { color: var(--red); }
 .fsuccess { display: none; text-align: center; padding: 40px 20px; }
 .fsuccess.on { display: block; }
 .fsuccess-icon { width: 40px; height: 40px; margin: 0 auto 14px; color: var(--red); }
