@@ -38,7 +38,6 @@ export default function Nav() {
           <li><Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link></li>
           <li><Link href="/why" className={pathname === '/why' ? 'active' : ''}>Why Us</Link></li>
           <li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact Us</Link></li>
-          <li><Link href="/apply" className={pathname === '/apply' ? 'active' : ''}>Apply as VA</Link></li>
         </ul>
         <div className="nav-right">
           <a href="mailto:jackson@fluentcallers.com" className="nav-email">jackson@fluentcallers.com</a>
@@ -53,7 +52,6 @@ export default function Nav() {
         <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
         <Link href="/why" onClick={() => setMenuOpen(false)}>Why Us</Link>
         <Link href="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
-        <Link href="/apply" onClick={() => setMenuOpen(false)}>Apply as VA</Link>
         <a href="mailto:jackson@fluentcallers.com" style={{ color: 'var(--w40)' }}>jackson@fluentcallers.com</a>
         <Link href="/contact" className="btn-red" onClick={() => setMenuOpen(false)}>Find My VA</Link>
       </div>

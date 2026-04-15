@@ -108,7 +108,7 @@ nav.scrolled {
 .nav-logo-line { font-size: 1.05rem; font-weight: 800; color: var(--white); letter-spacing: -0.01em; display: block; }
 .nav-logo-line .dot { color: var(--red); }
 
-.nav-center { display: flex; justify-content: center; gap: 36px; list-style: none; }
+.nav-center { display: flex; justify-content: center; gap: 44px; list-style: none; }
 .nav-center a { font-size: .85rem; color: var(--w70); text-decoration: none; transition: color .2s; }
 .nav-center a:hover { color: var(--white); }
 .nav-center a.active { color: var(--white); }
