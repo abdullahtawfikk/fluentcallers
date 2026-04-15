@@ -217,11 +217,11 @@ section { padding: 96px 64px; }
   to   { transform: translateX(-50%); }
 }
 .m-item {
-  display: flex; align-items: center; gap: 28px; padding: 0 28px;
+  display: inline-flex; align-items: center;
   font-size: .7rem; letter-spacing: .13em; text-transform: uppercase;
   color: var(--w40); white-space: nowrap; font-weight: 500;
 }
-.m-sep { color: var(--red); font-size: .55rem; line-height: 1; }
+.m-sep { color: var(--red); font-size: .55rem; line-height: 1; margin: 0 24px; }
 
 /* ─── HOW IT WORKS ───────────────────────────────────────────────────────── */
 #how { background: var(--bg); }
